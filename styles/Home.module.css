@@ -1,0 +1,285 @@
+.home {
+    width: 100%;
+    height: 75vh;
+    background-image: url('/images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.homeContent {
+    width: 45%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.homeContent>h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    letter-spacing: 0.305em;
+    color: #E7E7E7;
+    line-height: 0%;
+}
+
+.homeContent>h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.0625rem;
+    width: 90%;
+    color: #E7E7E7;
+}
+
+.homeContent>p {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size:20px;
+    /* line-height: 1rem; */
+
+    color: #D8D8D8;
+}
+
+.selectCity form {
+    background: #FFFFFF;
+    border-radius: .3125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem 2rem;
+}
+
+.selectCity form label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    text-align: center;
+    padding-bottom: 1.25rem;
+    color: #000000;
+
+}
+
+.selectCity form select {
+    display: block;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0rem 0rem .25rem rgba(0, 0, 0, 0.25);
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    text-align: center;
+    color: #000000;
+    padding: .75rem .1875rem;
+    padding-right: 4.0625rem;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* ---------------------------- banner styling ------------------------------------------------------*/
+
+.banner img {
+    width: 100%;
+
+}
+
+
+
+/* -------------------------------ABOUT SECTION -------------------------------------------- */
+
+.about {
+    background: #276600;
+    display: flex;
+    padding: 1.875rem 10rem;
+
+}
+
+.textArea {
+    width: 50%;
+    word-wrap: break-word;
+}
+
+
+.textArea>h2 {
+    background: #21669D;
+    border-radius: 1.5625rem;
+    color: #E7E7E7;
+    display: inline-block;
+    padding: .3125rem .75rem;
+    margin-bottom: 0rem;
+}
+
+
+.textArea>p {
+    color: #FFFFFF;
+    text-align: justify;
+}
+
+.gridArea {
+    margin-left: 1.875rem;
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.gridArea>img {
+    width: 100%;
+    border-radius: .375rem;
+}
+
+
+/* ---------------------------------1128px ---------------------------------------------- */
+
+
+
+
+
+/* ------------------------------------------1024px ----------------------------------------- */
+
+@media screen and (max-width:1024px) {
+    .home {
+        height: 100vh;
+        background-image: url('/images/mobile.png');
+
+    }
+
+    .homeContent {
+        width: 60%;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 11.875rem;
+    }
+
+    .homeContent>h3 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.33rem;
+        line-height: 1.5625rem;
+        letter-spacing: 0.305em;
+        color: #E7E7E7;
+    }
+
+    .homeContent>h1 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.4748rem;
+        line-height: 3rem;
+        width: 75%;
+        color: #E7E7E7;
+    }
+
+    .homeContent>p {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5047rem;
+        line-height: 1.875rem;
+
+        color: #D8D8D8;
+    }
+
+
+    /* ----------------------ABOUT IN 1024PX  --------------- */
+
+    .about {
+        padding: 1.875rem 3rem;
+
+    }
+
+
+}
+
+/* ------------------------960px ----------------------- */
+
+@media screen and (max-width:960px) {
+
+    .about {
+        flex-direction: column;
+    }
+
+    .textArea {
+        width: 100%;
+    }
+
+    .textArea>h2 {
+        font-size: .9rem;
+    }
+
+    .gridArea {
+        width: 100%;
+        margin-left: 0;
+    }
+
+}
+
+
+
+
+/* ---------------------780px --------------------------- */
+
+
+@media screen and (max-width:780px) {
+    .home {
+        height: 100vh;
+        background-image: url('/images/mobile.png');
+        display: grid;
+        place-items: center;
+    }
+
+    .homeContent {
+        width: 90%;
+        align-items: center;
+        position: absolute;
+        bottom: .625rem;
+    }
+
+
+
+    .homeContent>h3 {
+        font-size: .75rem;
+    }
+
+    .homeContent>h1 {
+        font-size: 1.8498rem;
+        line-height: 2rem;
+        width: 90%;
+    }
+
+    .homeContent>p {
+        font-size: .9422rem;
+        line-height: 1.25rem;
+        text-align: center;
+    }
+
+
+
+    .selectCity form label {
+        display: none;
+
+    }
+
+    .selectCity form select {
+        box-shadow: none;
+        -webkit-appearance: none;
+        font-style: 1.875rem;
+        padding: .5rem 1.25rem;
+        letter-spacing: .0688rem;
+
+    }
+}

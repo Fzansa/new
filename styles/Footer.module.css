@@ -1,0 +1,135 @@
+.footer {
+    padding: 23px 12px;
+    background: #343434;
+    padding: 1.875rem 10rem;
+}
+
+.location {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerHeading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: .8125rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.08em;
+    color: #56FBFF;
+}
+
+.location>p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: .8125rem;
+    line-height: 180.5%;
+    color: #FFFFFF;
+    width: 84%;
+    align-items: justify;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactList {
+    display: flex;
+    justify-content: space-between;
+    width: 84%;
+    padding-right: 30%;
+}
+
+.contactList>p>a {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .8125rem;
+    line-height: 1.5rem;
+    /* identical to box height */
+    letter-spacing: 0.08em;
+}
+
+.footerMenu {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 15%;
+}
+
+.footerMenu>p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: .8125rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.08em;
+
+    color: #FFFFFF;
+}
+
+.dFooter{
+    display: grid;
+    place-items: center;
+    padding-top:5%;
+}
+.dFooter > .icons{
+    display: flex;
+}
+.dFooter > .icons > span{
+    display:block;
+    color: #FFFFFF;
+    padding:8px;
+    font-weight: 600;
+    font-size:23px;
+    
+}
+
+.copyright > p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 15px;
+    letter-spacing: 0.08em;
+    
+    color: #FFFFFF;
+}
+
+
+/* ------------------LETS MAKE FOOTER MOBILE FRIENDLY ------------------------- */
+
+
+/* ------------------------------- 1024px ---------------------------------- */
+
+@media screen and (max-width:1024px) {
+    .footer {
+        padding: 1.875rem 3rem;
+    }
+}
+
+/* ----------------------------- 890px -------------------------------------- */
+
+@media screen and (max-width:890px) {
+    .location {
+        flex-direction: column;
+    }
+
+    .contact {
+       
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .contactList {
+        width: 100%;
+        padding-right: 0%;
+        flex-direction: column;
+    }
+    
+    .footerMenu {
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        padding-left: 0%;
+    }
+    
+}
